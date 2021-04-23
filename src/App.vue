@@ -6,7 +6,8 @@
 
 export default {
   name: 'App',
-  components: {
+  mounted(){
+    localStorage.setItem("loggedUser", "Philemon")
   }
 }
 </script>

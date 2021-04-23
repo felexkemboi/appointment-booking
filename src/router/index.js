@@ -16,12 +16,12 @@ const router = new VueRouter({
     },
     {
       path: "/login",
-      name: "Home",
+      name: "Homes",
       component: () => import("@/views/Login.vue"),
     },
     {
       path: "/register",
-      name: "Home",
+      name: "Homez",
       component: () => import("@/views/UserRegister.vue"),
     },
   ]
