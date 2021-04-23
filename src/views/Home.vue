@@ -111,7 +111,7 @@ export default {
       appoinmentWith : "",
       user : "",
       reason: "",
-      date :"",
+      date :null,
       option : "",
       usersLogged : [
         {
@@ -139,9 +139,9 @@ export default {
     book(){
       let payload = {
         "madeBy" : localStorage.getItem("loggedUser"),
-        "time": this.date,
+        "time": this.$children[0].date,
         "reason" : this.reason,
-        "with" : this.user,
+        "with" : this.appoinmentWith,
         "status" : "Processing"
       }
       console.log(payload)

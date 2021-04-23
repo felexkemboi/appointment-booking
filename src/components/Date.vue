@@ -20,14 +20,6 @@ export default {
       date: '2000-01-1',
     }
   },
-  watch: {
-    date(newValue){
-      if(newValue){
-        const dateChosen = newValue 
-        this.$parent.user.birth = dateChosen
-      }
-    }
-  },
   methods: {
     dateFormatter (date, format) {
       return moment(date).format(format)
