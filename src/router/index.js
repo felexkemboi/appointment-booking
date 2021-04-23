@@ -13,17 +13,7 @@ const router = new VueRouter({
       path: "/",
       name: "Home",
       component: () => import("@/views/Home.vue"),
-    },
-    {
-      path: "/login",
-      name: "Homes",
-      component: () => import("@/views/Login.vue"),
-    },
-    {
-      path: "/register",
-      name: "Homez",
-      component: () => import("@/views/UserRegister.vue"),
-    },
+    }
   ]
 });
 
